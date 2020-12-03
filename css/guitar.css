@@ -17,47 +17,35 @@
 body{
     font-family: 'Texturina';
     font-weight: 300;
-    font-size: 15px;
     line-height: 27px;
-    background: radial-gradient(circle, rgba(255,199,0,1) 39%, rgba(222,150,35,1) 100%);
+    background: linear-gradient(90deg, rgba(54,52,56,1) 32%, rgba(92,90,87,1) 100%); 
 }
 
 /* Header Selector */
 header{
-    background: linear-gradient(90deg, rgba(54,52,56,1) 32%, rgba(92,90,87,1) 100%);     
+    background: linear-gradient(90deg, rgba(54,52,56,1) 32%, rgba(92,90,87,1) 100%); 
     height: 100px;
-    box-shadow: 0 5px 10px #1fa4b6;
-    border-bottom: 2px solid black;
-    border-top: 2px solid black;
+    border-bottom: 1px solid black;
+    position: relative;
 }
 
 /* Logo Style */
 .logo{
-    width: 80px;
-    height: 80px;
-    /* margin-top: 7px;
-    text-align: left;
-    padding-left: 130px;
-    float: left; */
+    margin-left: 35px;
+    padding: 5px;
 }
 
-.logo h1{
-    font-family: "New Rocker";
-    color: #FFC700;
+.logo video{
+    width: 90px;
+    height: 90px;
+    border-radius: 50px;
+    border: 3px solid #FFC700;
 }
-/* logo img */
-/* .logo video{
-    height: 130px;
-    border-radius: 15px;
-    border: 2px solid black;
-} */
+
 
 /* nav Selector */
 nav{
-    /* width: 70%;
-    text-align: right;
-    float: right;
-    margin-top: 100px; */
+    margin-top: 30px;
 }
 
 .nav-flex{
@@ -69,12 +57,12 @@ nav{
 /* nav a Selector */
 nav a{
     font-weight: 500;
-    font-size: 1.867em;
+    font-size: 2em;
     font-family: 'New Rocker';
     padding: 10px 40px;
     text-decoration: none;
-    color: #FFC700;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: #05414a;
+    text-shadow: -0.5px 0 #FFC700, 0 0.5px #FFC700, 0.5px 0 #FFC700, 0 -0.5px #FFC700;
     border-radius: 15px;
 }
 
@@ -92,57 +80,30 @@ nav a:hover{
 
 /* Banner Style */
 .banner{
-    width: 100%;
-    height: 82vh;
-    overflow: hidden;
+    height: 87.81vh;
+    background-image: url(../images/banner.jpg);
     background-size: cover;
-    
+    border-bottom: 1px solid black;
 }
-
-
-.banner img{
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    top: 0;
-    left: 0;
-    position: absolute;
-    z-index: -1;
-} 
 
 /* Banner Content Style */
 .banner-content{
-    width: 55%;
+    width: 100%;
     line-height: 80px;
-    height: 80px;
-    text-align: center;
-    margin-top: 270px;
+    text-align: left;
+    padding-top: 325px;
+    padding-left: 30px;
 }
 
 
 /* banner-content h1 style */
 .banner-content h1{
-    color: #FFC700;
+    color: black;
     font-weight: 700;
     font-family: 'New Rocker';
-    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
     font-size: 4em;
-    
 }
-
-
-/* main element Selector */
-main{
-    width: 100%;
-    margin: auto;
-}
-
-.view-container{
-    height: 100vh;
-    border-bottom: 0.01px solid black;
-    scroll-snap-align: top;
-}
-
 
 /* Welcome class Selector */
 .announce{
@@ -164,57 +125,61 @@ main{
     letter-spacing: 4px;
 }
 
-.col{
 
+/* main element Selector */
+main{
+    width: 100%;
+    margin: auto;
+    font-family: 'Texturina';
 }
 
+.view-container{
+    height: 100vh;
+    border-bottom: 0.01px solid black;
+    scroll-snap-align: top;
+}
+
+.col-12, .col-lg-6{
+    padding: 30px;
+    
+}
 .col-12 img, .col-lg-6 img{
     width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    border: 1px solid black;
+    box-shadow: 0 20px 60px black;
 }
 
 /* Product Container */
 .content-container{
-    width: 95%;
-    height: 600px;
-    margin: 40px auto;
-    padding-top: 20px;
+    width: 98%;
+    margin: 10px auto;
     box-shadow: 0 20px 60px black;
     border-radius: 15px;
+    background: radial-gradient(circle, rgba(255,199,0,1) 39%, rgba(222,150,35,1) 100%);
     border: 1px solid black;
-    background: rgb(181,179,182);
-    background: linear-gradient(90deg, rgba(181,179,182,1) 0%, rgba(255,255,255,1) 25%, rgba(204,200,205,1) 50%, rgba(255,255,255,1) 75%, rgba(181,179,182,1) 100%);
 }
 
 .content-container h1{
     line-height: 110px;
     text-align: center;
     font-size: 3em;
-    word-spacing: 30px;
-    background: rgb(54,52,56);
-    background: linear-gradient(90deg, rgba(54,52,56,1) 32%, rgba(92,90,87,1) 100%); 
+    background: linear-gradient(90deg, rgba(18,128,148,1) 0%, rgba(4,57,65,1) 35%, rgba(103,191,213,1) 100%);   
     color: black;
     font-family: 'New Rocker';
     text-shadow: -2px 0 #fff, 0 2px #fff, 2px 0 #fff, 0 -2px #fff;
-    width: 92.5%;
-    margin: 25px auto;
-    border-radius: 15px;
-    border: 1.5px solid black;
-    box-shadow: 0 20px 60px black;
+    margin: 0;
+    border-radius: 15px 15px 0 0;
+    border-bottom: 1px solid black;
 }
 
 /* Product Class Style */
 .product{
-    width: 15%;
-    height: 300px;
-    float: left;
-    text-align: center;
-    margin: 25px 32px;
-    padding-left: 15px;
-    padding-top: 20px;
+    padding: 20px;
 }
 
 .product img{
-    width: 100%;
     box-shadow: 0 20px 60px black;
     border-radius: 15px;
     border: 1px solid black;
@@ -228,10 +193,16 @@ main{
     font-size: 2em;
 }
 
+.thumbnail{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
 /* Button Stuff */
 .button {
     display: block;
-    vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -247,26 +218,16 @@ main{
     transform: scale(1.03);
   }
 
-  /* location style */
-  .location{
-    width: 16.6%;
-    float: left;
-    margin: 5px 114px;
-    
-  }
-
   .location h3{
       color: black;
       line-height: 45px;
       text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
       font-size: 2em;
       text-align: center;
-      margin-bottom: 20px;
-      height: 45px;
+      margin-top: 40px;
   }
 
   .location img{
-      object-fit: fill;
       border-radius: 15px;
       box-shadow: 0 10px 60px black;
       height: 400px;
@@ -275,7 +236,6 @@ main{
   .sign{
       color: black;
       box-shadow: 0 5px 20px black;
-      background: rgb(255,199,0);
       background: radial-gradient(circle, rgba(255,199,0,1) 39%, rgba(222,150,35,1) 100%);
       border-radius: 10px;
       text-decoration: none;
@@ -291,16 +251,12 @@ main{
   }
   
   .directions{
-      width: 120px ;
-      height: 35px;
-      line-height: 30px;
-      border-radius: 10px;
+      border-radius: 5px;
       box-shadow: 0 5px 20px black;
-      background: rgb(255,199,0);
-      background: radial-gradient(circle, rgba(255,199,0,1) 39%, rgba(222,150,35,1) 100%);
+      background: linear-gradient(90deg, rgba(54,52,56,1) 32%, rgba(92,90,87,1) 100%);
       text-decoration: none;
       text-align: center;
-      color: black;
+      color: white;
       text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
       margin: 40px 52px;
   }
@@ -313,56 +269,59 @@ main{
 
 /* Left Column Layout */
 .design{
-    background: rgb(193,183,203);
-    background: linear-gradient(90deg, rgba(193,183,203,1) 0%, rgba(224,219,211,1) 100%);
+    background: radial-gradient(circle, rgba(255,199,0,1) 39%, rgba(222,150,35,1) 100%);
     text-align: center;
-    padding: 2em;
+    padding: 7%;
     border-radius: 15px;
     box-shadow: 0 20px 60px black;
+    border: 1px solid black;
+    height: 100%;
 }
 
 /* design h1 selector */
 .design h1{
-    height: 50px;
-    line-height: 50px;
+    margin-top: 10px;
+    padding: 15px;
+    margin-bottom: 0;
     background: linear-gradient(90deg, rgba(18,128,148,1) 0%, rgba(4,57,65,1) 35%, rgba(103,191,213,1) 100%); 
-    border-radius: 15px;
+    border-radius: 15px 15px 0 0;
     border: 1px solid black;
     box-shadow: 0 10px 20px black;
     font-family: 'New Rocker';
-    font-size: 30px;
-    text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+    font-size: 40px;
+    color: black;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 
 /* design p selector */
 .design p{
-    margin-top: 20px;
+    margin-bottom: 0;
     font-weight: 300;
-    font-size: 20px;
-    line-height: 1.6em;
-    padding: 10px;
+    font-size: 17px;
+    font-family: 'Texturina';
+    line-height: 3em;
+    padding: 15px;
+    overflow: scroll;
     box-shadow: 0 10px 20px black;
-    border: 1px solid black;
-    border-radius: 15px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-radius: 0 0 15px 15px;
     background: rgb(54,52,56);
     background: linear-gradient(90deg, rgba(54,52,56,1) 32%, rgba(92,90,87,1) 100%); 
     color: white;
     text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-
 }
 
 /* design dl */
 .design dl{
-    margin-top: 30px;
     line-height: 30px;
-    max-height: 280px;
     box-shadow: 0 10px 20px black;
     padding: 5px;
     border: 1px solid black;
-    border-radius: 15px;
-    background: rgb(54,52,56);
+    font-family: 'Texturina';
+    border-radius: 0 0 15px 15px;
     background: linear-gradient(90deg, rgba(54,52,56,1) 32%, rgba(92,90,87,1) 100%); 
-    overflow: scroll;
 }
 
 /* design dt */
@@ -370,45 +329,59 @@ main{
     font-size: 20px;
     font-weight: bold;
     margin-top: 15px;
-    color: black;
-    text-shadow: -0.5px 0 white, 0 0.5px white, 0.5px 0 white, 0 -0.5px white;
+    color: white;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 
 .design dd{
-    color: white;
     padding: 10px;
+    color: white;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 15px;
 }
 
 .design ol{
-    margin-top: 5px;
-    margin-left: 20px;
-    text-align: left;
     padding: 20px;
-    line-height: 40px;
+    line-height: 30px;
+    border-radius: 0 0 15px 15px;
+    border-left: solid 1px black;
+    border-right: solid 1px black;
+    border-bottom: solid 1px black;
+    background: linear-gradient(90deg, rgba(54,52,56,1) 32%, rgba(92,90,87,1) 100%); 
 }
 
 .design li{
     color: white;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    
 }
 
-
-.list-container{
-    height: 450px;
-    box-shadow: 0 10px 20px black;
-    border: 1px solid black;
-    border-radius: 15px;
-    margin-top: 2.5em;
-    background: rgb(54,52,56);
-    background: linear-gradient(90deg, rgba(54,52,56,1) 32%, rgba(92,90,87,1) 100%); 
-}
 
 /* lessons */
 .lessons{
-    margin-top: 75px;
-    max-height: 420px;
+    background: none;
+    border: none;
+    box-shadow: none;
+    padding: 20px;
+    width: 500px;
 }
+
+.lessons img{
+    margin-top: 15px;
+    border-radius: 15px;
+    border: 1px solid black;
+    box-shadow: 0 10px 20px black;
+}
+
+.lessons h1{
+    padding: 0;
+}
+
+.lessons dl{
+    border-top: none;
+    overflow: scroll;
+}
+
 
 /* link selector */
 .link{
@@ -418,47 +391,23 @@ main{
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
-/*  */
-.img-social{
-    float: right;
-    float: right;
-    width: 40%;
-    margin: 40px;
-    margin-right: 50px;
-    padding-right: 20px;
-}
-
-.img-social img{
-    width:100%;
-    height: 422px;
-    object-fit:cover;
-    object-position:50% 50%;
-    border-radius: 15px;
-    box-shadow: 20px 20px 40px black;
-}
 
 .table-container{
-    height: 280px;
     box-shadow: 0 10px 20px black;
-    border: 1px solid black;
-    border-radius: 15px;
-    margin-top: 2em;
-    background: rgb(54,52,56);
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-radius: 0 0 15px 15px;
+    padding: 20px;
     background: linear-gradient(90deg, rgba(54,52,56,1) 32%, rgba(92,90,87,1) 100%); 
+
 }
 
 table{
-    width: 90%;
-    height: 180px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1em;
     margin-bottom: 1em;
     box-shadow: 0 2px 10px black;
     border-collapse: collapse;
     border-radius: 15px;
-    -moz-border-radius:15px;
-    background: rgb(193,183,203);
     background: linear-gradient(90deg, rgba(193,183,203,1) 0%, rgba(224,219,211,1) 100%);
 }
 
@@ -488,13 +437,12 @@ td:first-child, th:first-child {
 }
 
 caption{
-    margin-top: 5px;
     font-weight: 700;
     font-size: 1.2em;
-    padding-bottom: 20px;
     color: white;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
+
 #wrapper{
     min-height: 100%;
     height: auto;
@@ -510,6 +458,7 @@ footer{
     width: 100%;
     height: 150px;
     text-align: center;
+    font-family: 'Texturina';
 }
 
 footer .copy{
