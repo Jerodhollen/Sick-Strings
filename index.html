@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sick String Guitar Shop | Home </title>
 
+
     <!-- style sheet link -->
     <link rel="stylesheet" href="css/guitar.css">
 
@@ -13,6 +14,9 @@
 
     <!-- hamburger icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- java script file -->
+    <script src="java.js"></script>
 
     <!-- favicon -->
     <link rel="shortcut icon" href="images/favicon.ico">
@@ -39,12 +43,15 @@
                 </div>
                     
                 <!-- nav class -->
-                <nav>
+                <nav class="topnav" id="myTopnav">
                     <a href="index.html">Home</a>
                     <a href="services.html">Services</a>
                     <a href="products.html">Products</a>
                     <a href="contact.html">Contact</a>
                     <a href="about.html">About</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                      </a>
                 </nav> 
                 <!-- nav class end  -->
             </div>
@@ -67,143 +74,171 @@
         <!-- Main Content Start - Two Column Layout-->
         <main>
 
-                <div class="content-container">
-
-                    <h1>THE SHOP</h1>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1>SHOP</h1>
+                        </div>
+                    </div>
                     
-                    <div class="thumbnail">
-                        <a href="#" class="button">
-                        
-                            <!-- acoustic products -->
-                        
-                            <div class="product">
-    
-                                <!-- acoustic guitar image-->
-                                <img src="images/acoustic1.jpg" alt="" height="200" width="200">
-    
-                                <!-- heading -->
-                                <h3>Acoustic</h3>
-                                
-                            </div>
-                        </a>
-                
-                        <!-- Clickable Product Class -->
-                        <a href="#" class="button">
-            
-                            <!-- electric products -->
-                            <div class="product">
-            
-                                <!-- electric guitar image -->
-                                <img src="images/electric1.jpg" alt="" height="200" width="200">
-                                
-                                <!-- heading -->
-                                <h3>Electric</h3>
-    
-                            </div>
-                        </a>
-                
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <div class="design">
+                                <a href="#" class="button">
+                                    
+                                    <!-- acoustic guitar image-->
+                                    <img src="images/acoustic1.jpg" alt="" height="200" width="200">
         
-                        <!-- Clickable Product Class -->
-                        <a href="#" class="button">
-                        
-                            <!-- bass products -->
-                            <div class="product">
-            
-                                <!-- bass image -->
-                                <img src="images/bass1.jpg" alt="" height="200" width="200">
+                                    <!-- heading -->
+                                    <h2>Acoustic</h2>
                                 
-                                <!-- heading -->
-                                <h3>Bass</h3>
-            
+                                </a>
                             </div>
-                        </a>
-                
-                        <!-- Clickable Product Class -->
-                        <a href="#" class="button">
-                            <!-- amplifiers products -->
-                            <div class="product">
-    
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <div class="design">
+                                <!-- Clickable Product Class -->
+                                <a href="#" class="button">
+                    
+                                    <!-- electric guitar image -->
+                                    <img src="images/electric1.jpg" alt="" height="200" width="200">
+                                    
+                                    <!-- heading -->
+                                    <h2>Electric</h2>
+                                
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <div class="design">
+                                <!-- Clickable Product Class -->
+                                <a href="#" class="button">
+                        
+                                    <!-- bass image -->
+                                    <img src="images/bass1.jpg" alt="" height="200" width="200">
+                            
+                                    <!-- heading -->
+                                    <h2>Bass</h2>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <div class="design">
+                                <!-- Clickable Product Class -->
+                                <a href="#" class="button">
+                                   
                                 <!-- amplifer's image -->
                                 <img src="images/amplifier1.jpg" alt="" height="200" width="200">
                                 
-                                 <!-- heading -->
-                                 <h3>Amps</h3>
-    
+                                    <!-- heading -->
+                                    <h2>Amps</h2>
+                                    
+                                </a>
                             </div>
-                        </a>
-                      
-                        <!-- Clickable Product Class -->
-                        <a href="#" class="button">
-                                
-                            <!-- accessories products -->
-                            <div class="product">
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <div class="design">
+                                <!-- Clickable Product -->
+                                <a href="#" class="button">
     
                                 <!-- accesories img -->
                                 <img src="images/accessories1.jpg" alt="" height="200" width="200">
     
                                 <!-- heading -->
-                                <h3>Accessories</h3>
-                
+                                <h2>Accessories</h2>
+                                </a>
                             </div>
-                        </a>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <div class="design">
+                                <!-- Clickable Product -->
+                                <a href="#" class="button">
+    
+                                    <!-- accesories img -->
+                                    <img src="images/case.jpg" alt="" height="200" width="200">
+        
+                                    <!-- heading -->
+                                    <h2>Cases</h2>
+                                    </a>
+                            </div>
+                        </div>
                     </div>
-                
-                </div> <!-- product-container end -->
+                    <div class="row">
+                        <div class="col-12">
+                            <!-- heading -->
+                            <h1>FIND US</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-3">
+                            <div class="design">
 
+                                <!-- location 1 start -->
+                                <div class="location">
             
-                      
-                <div class="content-container">
-
-                    <!-- heading -->
-                    <h1>LOCATIONS</h1>
-
-                    <div class="thumbnail">
-                        <!-- location 1 start -->
-                        <div class="location">
-    
-                            <!-- heading -->
-                            <h3>Bellingham</h3>
-    
-                            <!-- image -->
-                            <img src="images/location1.png" alt="">
-    
-                            <!-- Directions Button -->
-                            <a class="button directions" href="#">Get Directions</a>
-                            
-    
+                                    <!-- heading -->
+                                    <h3>Bellingham</h3>
+            
+                                    <!-- image -->
+                                    <img src="images/location1.png" alt="">
+            
+                                    <!-- Directions Button -->
+                                    <a class="button directions" href="#">Directions</a>
+                                </div>
+                            </div>
                         </div>
-        
-                        <!-- location 2 start -->
-                        <div class="location">
-    
-                            <!-- heading -->
-                            <h3>Everett</h3>
-    
-                            <!-- image -->
-                            <img src="images/location2.png" alt="">
-                           
-                            <!-- Directions Button -->
-                        
-                            <a class="button directions" href="#">Get Directions</a>
-                            
+                        <div class="col-sm-12 col-md-6 col-lg-3">
+
+                            <div class="design">
+                                
+                                <!-- location 2 start -->
+                                <div class="location">
+            
+                                    <!-- heading -->
+                                    <h3>Everett</h3>
+            
+                                    <!-- image -->
+                                    <img src="images/location2.png" alt="">
+                                   
+                                    <!-- Directions Button -->
+                                
+                                    <a class="button directions" href="#">Directions</a>
+                                    
+                                </div>
+                            </div>
                         </div>
-        
-                        <!-- location 3 start -->
-                        <div class="location">
-    
-                            <!-- heading -->
-                            <h3>Seattle</h3>
-    
-                            <!-- image -->
-                            <img src="images/location3.png" alt="">
-    
-                            <!-- Directions Button -->
-                            <a class="button directions" href="#">Get Directions</a>
-                            
+                        <div class="col-sm-12 col-md-6 col-lg-3">
+                            <div class="design">
+
+                                <!-- location 3 start -->
+                                <div class="location">
+            
+                                    <!-- heading -->
+                                    <h3>Seattle</h3>
+            
+                                    <!-- image -->
+                                    <img src="images/location3.png" alt="">
+            
+                                    <!-- Directions Button -->
+                                    <a class="button directions" href="#">Directions</a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-3">
+                            <div class="design">
+                                <div class="location">
+                                    <h3>Tacoma</h3>
+
+                                    <img src="images/location4.png" alt="">
+
+                                    <a class="button directions" href="#">Directions</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
-                    </div>
+                </div>
         </main> <!-- end of main -->
     
         
